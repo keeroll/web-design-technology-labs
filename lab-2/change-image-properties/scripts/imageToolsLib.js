@@ -5,9 +5,21 @@ function setImageProperties(imageHeight, imageWidth) {
 }
 
 function setBorderProperties(borderWidth, borderColor) {
-    let item = document.getElementById("mainImageContainer");
-    item.style.borderWidth = borderWidth;
-    item.style.borderColor = borderColor; ///todo: check hex or rgb or just text
+    const borderStyle = borderWidth + " solid " + borderColor;
+    let item = document.getElementById("mainImage");
+    item.style.border = borderStyle;
 }
 
-///todo: create a main method that will call this functions
+function changeImageProperties() {
+    const pxPostfix = "px";
+
+    let imageWidth = document.getElementById("imageWidthInput").value + pxPostfix;
+    let imageHeight = document.getElementById("imageHeightInput").value + pxPostfix;
+    let borderWidth = document.getElementById("borderWidthInput").value + pxPostfix;
+    let borderColor = document.getElementById("borderColorInput").value;
+
+    setImageProperties(imageHeight, imageWidth);
+    setBorderProperties(borderWidth, borderColor);
+}
+
+///todo: create color validation method (hex, rgb, text)

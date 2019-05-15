@@ -1,13 +1,41 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
-        <title>Change image properties (lite)</title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>
+            Change image properties (lite)
+        </title>
     </head>
     <script type="text/javascript" src="scripts/imageToolsLib.js"></script>
+    <link rel="stylesheet" href="styles/styles.css">
     <body>
-        <div id="mainImageContainer">
-            <img id="mainImage" src="" width="200px" />
+        <div class="main-container">
+            <img id="mainImage" src="./images/thumb-1920-313701.jpg"/>
+
+            <span class="input-label">
+                Image Width:
+            </span>
+            <input id="imageWidthInput" type="text" value="380"/>
+
+            <span class="input-label">
+                Image Height:
+            </span>
+            <input id="imageHeightInput" type="text" value="250"/>
+
+            <span class="input-label">
+                Border Width:
+            </span>
+            <input id="borderWidthInput" type="text" value="5"/>
+
+            <span class="input-label">
+                BorderColor:
+            </span>
+            <input id="borderColorInput" type="text" value="#FF0000"/>
+            
+            <button class="change-button" onclick="changeImageProperties()">
+                Change
+            </button>
         </div>
-        <br/>
-        <button>Apply new image properties</button>
     </body>
 </html>
