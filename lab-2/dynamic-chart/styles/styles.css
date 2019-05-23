@@ -1,0 +1,46 @@
+#mainChart {
+    display: table;
+    width: 100%;
+    min-width: 320px;
+    max-width: 600px;
+    height: 400px;
+    border: 1px solid #333333;
+
+    background: repeating-linear-gradient(
+      to bottom,
+      #FFDFD3,
+      #DDDDDD 2px,
+      #FFFFFF 2px,
+      #FFFFFF 10%
+    );
+}
+
+.chart-cell {
+    display: table-cell;
+    vertical-align: bottom;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.chart-animation {
+    transition: height 1s;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+}
+  
+.main-container .dynamic-chart-item {
+    padding: 1em
+}
+
+.left {
+    background: #d00;
+}
+  
+.right {
+    background: #0d0;
+}
+  

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>
+            Dynamic chart
+        </title>
+    </head>
+    <script type="text/javascript" src="scripts/chartToolsLib.js"></script>
+    <link rel="stylesheet" href="styles//styles.css">
+    <body>
+        <div class="main-container">
+            <div class="dynamic-chart-item left">
+                <button onclick="addRow()">Add row</button>
+                <input id="nameCell" type="text" value="Spider-Man"/>
+                <input id="ratingCell" type="number" value="100"/>
+                <table id="mainTable">
+                    <tr>
+                        <th></th>
+                        <th>Name</th>
+                        <th>Rating</th>
+                    </tr>
+                    <!-- <tr>
+                        <td><input type="button" value="Delete row" onclick="deleteRow(this);"/></td>
+                    </tr> -->
+                </table>
+                
+            </div>
+            
+            <div class="dynamic-chart-item right">
+                <h1>
+                    Awesomeness chart
+                </h1>
+                <div id="mainChart"></div>
+            </div>
+        </div> 
+    </body>
+</html>
