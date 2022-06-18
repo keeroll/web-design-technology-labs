@@ -1,2 +1,2 @@
-# University tasks repository (web development course)
-### A few projects to pass web design technology course at university.
+# Web design repository
+Some web design tasks for one of my university courses
